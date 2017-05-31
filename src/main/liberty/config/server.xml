@@ -7,9 +7,12 @@
     </featureManager>
 
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
-    <httpEndpoint httpPort="9083" httpsPort="9445" id="defaultHttpEndpoint"/>
+    <!-- <httpEndpoint httpPort="9083" httpsPort="9445" id="defaultHttpEndpoint"/>
+     -->
+     <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}"
+        id="defaultHttpEndpoint"/>
 
     <applicationMonitor updateTrigger="mbean"/>
 
-    <webApplication id="async-servlet-nio-application" location="async-servlet-nio-application.war" name="async-servlet-nio-application"/>
+    <webApplication id="async-servlet-nio" location="async-servlet-nio.war" name="async-servlet-nio"/>
 </server>

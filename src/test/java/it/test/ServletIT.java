@@ -23,7 +23,7 @@ import org.junit.runners.Parameterized.Parameters;
  * This tests that the details are returned for the various servlets
  */
 @RunWith(Parameterized.class)
-public class ServletTest {
+public class ServletIT {
 
     private String servlet;
 
@@ -40,7 +40,7 @@ public class ServletTest {
         return servlets;
     }
 
-    public ServletTest(String servlet) {
+    public ServletIT(String servlet) {
         this.servlet = servlet;
     }
 
