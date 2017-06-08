@@ -107,7 +107,7 @@
                 <configuration>
                     <assemblyArtifact>
                         <groupId>com.ibm.websphere.appserver.runtime</groupId>
-                        <artifactId>wlp-webprofile7</artifactId>
+                        <artifactId>wlp-webProfile7</artifactId>
                         <version>17.0.0.1</version>
                         <type>zip</type>
                     </assemblyArtifact>
