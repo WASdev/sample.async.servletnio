@@ -32,14 +32,12 @@ repositories {
 
 ext {
     // Liberty server properties
-    wlpServerName = 'LibertyProjectServer'
-    serverDirectory = "${project.buildDir}/wlp/usr/servers/${wlpServerName}"
+    serverDirectory = "${project.buildDir}/wlp/usr/servers/defaultServer"
     testServerHttpPort = 9080
     testServerHttpsPort = 9443
 
     // This is set in the ibm-web-ext.xml file
     warContext = 'servlet-nio'
-
 }
 
 war {
@@ -50,7 +48,6 @@ liberty {
     server{
         configFile = file("src/main/wlp/server.xml")
         bootstrapProperties = ['appLocation': war.archiveName, 'appContext': war.baseName, 'default.http.port': testServerHttpPort, 'default.https.port': testServerHttpsPort]
-        name = 'LibertyProjectServer'
         apps = [war]
      }
 }
