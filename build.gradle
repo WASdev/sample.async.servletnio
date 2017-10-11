@@ -27,7 +27,7 @@ buildscript {
 }
 
 repositories {
-     mavenCentral()
+    mavenCentral()
 }
 
 ext {
@@ -49,7 +49,7 @@ liberty {
         configFile = file("src/main/wlp/server.xml")
         bootstrapProperties = ['appLocation': war.archiveName, 'appContext': war.baseName, 'default.http.port': testServerHttpPort, 'default.https.port': testServerHttpsPort]
         apps = [war]
-     }
+    }
 }
 
 dependencies {
