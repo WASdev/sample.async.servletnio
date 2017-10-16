@@ -9,7 +9,7 @@
         <artifactId>java8-parent</artifactId>
         <version>1.4</version>
     </parent>
-    
+
     <groupId>net.wasdev.wlp.sample</groupId>
     <artifactId>async-servlet-nio</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -40,7 +40,7 @@
         <testServerHttpPort>9083</testServerHttpPort>
         <testServerHttpsPort>9445</testServerHttpsPort>
     </properties>
-    
+
     <profiles>
         <profile>
             <id>usr-package</id>
@@ -49,7 +49,7 @@
             </properties>
         </profile>
     </profiles>
-    
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -76,10 +76,10 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    
+
     <build>
         <pluginManagement>
-            <plugins>       
+            <plugins>
                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
@@ -87,7 +87,7 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-    
+
         <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
@@ -103,12 +103,12 @@
             <plugin>
                 <groupId>net.wasdev.wlp.maven.plugins</groupId>
                 <artifactId>liberty-maven-plugin</artifactId>
-                <version>2.0</version>
+                <version>2.1</version>
                 <configuration>
                     <assemblyArtifact>
                         <groupId>com.ibm.websphere.appserver.runtime</groupId>
                         <artifactId>wlp-webProfile7</artifactId>
-                        <version>17.0.0.1</version>
+                        <version>17.0.0.2</version>
                         <type>zip</type>
                     </assemblyArtifact>
                     <configFile>src/main/liberty/config/server.xml</configFile>
