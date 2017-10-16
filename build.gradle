@@ -16,13 +16,9 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
-        maven {
-            name = 'Sonatype Nexus Snapshots'
-            url = 'https://oss.sonatype.org/content/repositories/snapshots/'
-        }
     }
     dependencies {
-        classpath 'net.wasdev.wlp.gradle.plugins:liberty-gradle-plugin:2.0-SNAPSHOT'
+        classpath 'net.wasdev.wlp.gradle.plugins:liberty-gradle-plugin:2.0'
     }
 }
 
@@ -32,7 +28,7 @@ repositories {
 
 ext {
     // Liberty server properties
-    serverDirectory = "${project.buildDir}/wlp/usr/servers/defaultServer"
+    serverDirectory = "${project.buildDir}/wlp/usr/servers/daytrader3_Sample"
     testServerHttpPort = 9080
     testServerHttpsPort = 9443
 
