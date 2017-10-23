@@ -13,7 +13,7 @@ This sample contains a few variations to illustrate how Non-blocking IO in Servl
 
 Browse the code to see what it does, or build and run it yourself:
 
-* [Building and running on the command line](/docs/Using-cmd-line.md)
+* [Building and running on the command line, Maven, and Gradle](/docs/Using-cmd-line.md)
 * [Building and running using Eclipse and WebSphere Development Tools (WDT)](/docs/Using-WDT.md)
 
 Once the server has been started, go to [http://localhost:9083/servlet-nio/](http://localhost:9083/servlet-nio/) to interact with the sample.
@@ -22,34 +22,6 @@ Once the server has been started, go to [http://localhost:9083/servlet-nio/](htt
 * [JSR 340: Java Servlet 3.1](https://jcp.org/en/jsr/detail?id=340)
     * Section 2.3.3.3 - Asynchronous processing
     * Section 5.3 - Non-blocking IO
-
-## Running with Gradle
-
-This project can also be built and run with [Gradle]. The provided `build.gradle` file applies the [Liberty Gradle Plug-in] and is configured to automatically download and install Liberty with the Liberty Java EE Web Profile 7 runtime from Maven Central. The Liberty Gradle Plug-in has built-in tasks that can be used to create, configure, and run the application on the Liberty server.
-
-Use the following steps to run the application with Gradle:
-
-1. Execute the full Gradle build. The Liberty Gradle Plug-in will download and install the Liberty server.
-    ```bash
-    $ ./gradlew clean build
-    ```
-
-2. To start the server with the Servlet sample execute:
-    ```bash
-    $ ./gradlew libertyStart
-    ```
-
-    Alternatively, execute the run command:
-    ```bash
-    $ ./gradlew libertyRun --no-daemon
-    ```
-
-Once the server has started, the application will be available under [http://localhost:9080/servlet-nio](http://localhost:9080/servlet-nio).
-
-3. To stop the server, execute:
-    ```bash
-    $ ./gradlew libertyStop
-    ```  
 
 ## Notice
 
