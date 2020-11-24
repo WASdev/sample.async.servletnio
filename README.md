@@ -1,5 +1,8 @@
 # Java EE7: Non-blocking Servlet IO [![Build Status](https://travis-ci.org/WASdev/sample.async.servletnio.svg?branch=master)](https://travis-ci.org/WASdev/sample.async.servletnio)
 
+**This repository is no longer being maintained and has been archived. It is left for reference and available for use as-is with the advisory that it depends old dependencies which may have security vulnerabilties.**
+
+
 Java EE7 added support for Non-blocking Servlet IO (NIO) in Servlet 3.1, which enables reading and writing data without blocking a thread, which can be very useful when faced with slow clients. The new function builds upon support for asynchronous processing that was introduced in Servlet 3.0, and will only work with async-enabled apps.
 
 This sample contains a few variations to illustrate how Non-blocking IO in Servlet 3.1 works:
